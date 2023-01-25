@@ -1,0 +1,51 @@
+<div class="container">
+
+  <div class="user-icon">
+    <img src="./assets/images/user-icon.png" alt="">
+  </div>
+
+  <div class="login-box">
+    <div class="name-box">
+      <ion-item fill="solid">
+        <ion-label position="floating" class="input-label"><span>Name</span></ion-label>
+        <ion-input type="email" ngModel email class="input"></ion-input>
+        <ion-note slot="helper">Enter a valid email</ion-note>
+        <ion-note slot="error">Invalid email</ion-note>
+      </ion-item>
+    </div>
+
+    <div class="lastname-box">
+      <ion-item fill="solid">
+        <ion-label position="floating" class="input-label"><span>Lastname</span></ion-label>
+        <ion-input type="email" ngModel email class="input"></ion-input>
+        <ion-note slot="helper">Enter a valid lastname</ion-note>
+        <ion-note slot="error">Invalid lastname</ion-note>
+      </ion-item>
+    </div>
+
+    <div class="password-box">
+      <ion-item fill="solid">
+        <ion-label position="floating" class="input-label"><span>New password</span></ion-label>
+        <ion-input type="password" ngModel password class="input"  maxlength="16"></ion-input>
+        <ion-note slot="helper">Enter a valid password</ion-note>
+        <ion-note slot="error">Invalid password</ion-note>
+      </ion-item>
+    </div>
+  </div>
+
+  <div class="text">
+    <div class="checkbox">
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label><span>Remember me</span></ion-label>
+    </div>
+    <a [routerLink]="['/login']"><span> Do you have account ?</span></a>
+  </div>
+
+  <div class="button">
+    <ion-button color="light"><span>Registration</span></ion-button>
+  </div>
+
+</div>
+
+
+

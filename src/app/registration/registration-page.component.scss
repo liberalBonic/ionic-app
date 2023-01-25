@@ -1,0 +1,53 @@
+.login-box {
+    display: block;
+    margin: 12px;
+    width: 85%;
+}
+
+.user-icon {
+    margin: 90px auto 10px;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: dimgrey;
+}
+
+.password-box, .name-box, .lastname-box {
+    border: 1px solid white;
+    width: 275px;
+}
+
+a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.text {
+    display: flex;
+    font-size: 13px;
+    margin: 25px auto 0;
+    justify-content: center;
+     
+    a {
+        margin-top: 3px;
+        margin-left: 22px;
+    }
+
+    .checkbox {
+        display: flex;
+        text-align: center;
+        
+        ion-label {
+            margin-top: 2.5px;
+            margin-left: 6px;
+        }
+    }
+}
+
+.button {
+    width: 275px;
+    margin-top: 10px;
+    margin-left: 6px;
+}

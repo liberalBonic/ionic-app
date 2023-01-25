@@ -1,11 +1,23 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginPageComponent } from './login/login-page.component';
+import { RegistrationPageComponent } from './registration/registration-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
+  },
+  {
+    path: 'login/registration',
+    component: RegistrationPageComponent
   }
+
 ];
 @NgModule({
   imports: [
